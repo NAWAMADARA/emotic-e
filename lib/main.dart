@@ -1,14 +1,7 @@
-import 'package:emotic_e/view/check_user.dart';
-import 'package:emotic_e/view/get_started_screen.dart';
-import 'package:emotic_e/view/teacher/assignment_page.dart';
-import 'package:emotic_e/view/bottom_nav_bar.dart';
-import 'package:emotic_e/view/login_page.dart';
-import 'package:emotic_e/view/register_page.dart';
-import 'package:emotic_e/view/test_model.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-
 import 'emotion_detection_screen.dart';
+
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -28,6 +21,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: EmotionDetectionScreen());
+        home: const EmotionDetectionScreen());
   }
 }
